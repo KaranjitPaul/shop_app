@@ -13,7 +13,6 @@ class ShopPage extends StatelessWidget {
     final products = context.watch<Shop>().shop;
 
     return Scaffold(
-      backgroundColor: Theme.of(context).colorScheme.surface,
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         elevation: 0,

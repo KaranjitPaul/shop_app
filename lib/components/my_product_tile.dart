@@ -1,5 +1,3 @@
-import 'dart:ui_web';
-
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shop_app/models/product.dart';
@@ -15,7 +13,13 @@ class MyProductTile extends StatelessWidget {
       showDialog(
         context: context,
         builder: (context) => AlertDialog(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadiusGeometry.circular(12),
+          ),
           content: Text("Add this item to your cart?"),
+          contentPadding: EdgeInsets.all(25),
+          actionsPadding: EdgeInsets.only(bottom: 6),
+          actionsAlignment: .spaceBetween,
           actions: [
             //cancel button
             MaterialButton(
